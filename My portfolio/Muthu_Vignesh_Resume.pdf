@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="robots" content="none,noarchive"/>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-12 navbar navbar-expand navbar-dark fixed-top mx-auto mt-2">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home-section" onclick="navigateTo('home-section')">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section" onclick="navigateTo('about-section')">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects-section" onclick="navigateTo('projects-section')">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section" onclick="navigateTo('contact-section')">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-12 home-container section active " id="home-section">
+                <div class="d-flex flex-row justify-content-center mt-5">
+                    <div class="home-part-container p-3 mt-2">
+                        <div class="mt-5 p-5">
+                            <p class="prof-para">Hi , I am</p>
+                            <h1 class="home-heading">Muthu Vignesh.</h1>
+                            <h2 class="home-heading " style="opacity: 0.7; font-size: 15px;">BIOMEDICAL ENGINEER | FULLSTACK DEVELOPER</h2>
+                            <p class="para mt-3">Welcome to My Website! Discover my journey in technology and innovation.</p>
+                        </div>
+                        <div class="pl-5">
+                            <button class="enter-button" onclick="navigateTo('about-section')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 about-container section" id="about-section">
+                <div class="d-flex flex-row mt-5">
+                    <div class="profile-card mt-5 p-2">
+                        <img class="profile-pic" src="https://cdn-icons-png.flaticon.com/512/6522/6522516.png" />
+                    </div>
+                    <div class="about-card mt-5 p-2">
+                        <div class="mt-3 p-2">
+                            <h1 class="as-heading">About</h1>
+                            <hr style="background-color: white;">
+                        </div>
+                        <div class="mt-3 p-2">
+                            <p class="as-para">
+                                Exploring the intersection of technology and healthcare—that’s where you’ll find me! I’m Muthu Vignesh, currently studying Biomedical Engineering at Sathyabama University. Dive into my profile to discover how I merge technical skills with medical insights.
+                            </p>
+                            <p class="as-para">
+                                With hands-on experience from leading workshops and projects, I have honed skills in Python, MATLAB, and cloud technologies with AWS. My project on developing a Pet Health Care Device demonstrated my ability to integrate sensor-based systems with real-time monitoring, emphasizing my approach to innovation in healthcare.
+                            </p>
+                            <p class="as-para">
+                                Crafting solutions that advance health technology motivates me daily. My educational journey includes specialized workshops like the Data Analytics Mega Workshop and training in Bioanalytical Tools, preparing me to tackle diverse challenges at the convergence of health and technology.
+                            </p>
+                            <p class="as-para">
+                                I excel in adaptability and problem-solving, ensuring I lead projects and teams effectively. Whether it’s developing apps or analyzing data, my aim is to contribute positively to our healthcare ecosystems.
+                            </p>
+                            <p class="as-para">
+                                Feel free to reach out if you're interested in making healthcare more intuitive and effective. Let’s connect!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-download mt-3 p-2 text-center">
+                    <a href="/assets/resume.pdf" download="Muthu_Vignesh_Resume.pdf">
+                        <button class="download-btn">Download My Resume</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 projects-container  section" id="projects-section">
+                <div class="pt-5 pb-5 mt-5">
+                    <h1>Projects</h1>
+                    <p>Explore some of the key projects I’ve worked on, where I applied my skills to solve real-world challenges. Each project showcases my expertise in using innovative technologies to deliver impactful solutions. Click on any project to learn more about the objectives, tools used, and the results achieved.</p>
+                    <div>
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://t3.ftcdn.net/jpg/05/71/06/76/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://t3.ftcdn.net/jpg/05/71/06/76/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://t3.ftcdn.net/jpg/05/71/06/76/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 section" id="contact-section">
+                <div style="background-color:black; color: white;" class="footer-section pt-5 pb-5 mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <h1 class="follow-us-section-heading">Follow Me</h1>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="follow-us-icon-container">
+                                        <i class="fab fa-twitter icons"></i>
+                                    </div>
+                                    <div class="follow-us-icon-container">
+                                        <a href="" class="instagram-icon" target="_blank" aria-label="Visit Instagram">
+                                            <i class="fab fa-instagram icons"></i>
+                                        </a>
+                                    </div>
+                                    <div class="follow-us-icon-container">
+                                        <i class="fab fa-linkedin icons"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 p-2 text-center">
+                                <h1 class="footer-section-mail-id mt-5">muthuvignesh710@gmail.com</h1>
+                                <p class="footer-section-address">
+                                    Sathyabama University , Chennai.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="index.js"></script>
+</body>
+
+</html>
