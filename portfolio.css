@@ -127,7 +127,7 @@ body {
     /* Ensure it's a square */
     object-fit: cover;
     /* Ensures the image is cropped properly */
-    align-self: flex-start;
+    align-self: center;
     border-radius: 50%;
 }
 
@@ -186,13 +186,15 @@ body {
 
 .skills-card-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     max-width: 900px;
-    flex-wrap: wrap;
     height: auto;
-    padding: 10px;
-    align-self:center;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+
 }
 
 .skill-card {
