@@ -191,6 +191,8 @@ body {
     max-width: 900px;
     flex-wrap: wrap;
     height: auto;
+    padding: 10px;
+    align-self:center;
 }
 
 .skill-card {
